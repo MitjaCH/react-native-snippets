@@ -1,0 +1,185 @@
+{
+    "View Component": {
+      "prefix": "View",
+      "body": [
+        "<View style={styles.${1:container}}>",
+        "  ${2}",
+        "</View>"
+      ],
+      "description": "React Native View component"
+    },
+    "Text Component": {
+      "prefix": "Text",
+      "body": [
+        "<Text style={styles.${1:text}}>",
+        "  ${2:Text}",
+        "</Text>"
+      ],
+      "description": "React Native Text component"
+    },
+    "Image Component": {
+      "prefix": "Image",
+      "body": [
+        "<Image",
+        "  source={require('${1:./path/to/image.png}')}",
+        "  style={styles.${2:image}}",
+        "/>"
+      ],
+      "description": "React Native Image component"
+    },
+    "TouchableOpacity Component": {
+      "prefix": "TouchableOpacity",
+      "body": [
+        "<TouchableOpacity",
+        "  style={styles.${1:button}}",
+        "  onPress={${2:handlePress}}",
+        ">",
+        "  ${3:/* content */}",
+        "</TouchableOpacity>"
+      ],
+      "description": "React Native TouchableOpacity component"
+    },
+    "ScrollView Component": {
+      "prefix": "ScrollView",
+      "body": [
+        "<ScrollView",
+        "  contentContainerStyle={styles.${1:container}}",
+        ">",
+        "  ${2:/* content */}",
+        "</ScrollView>"
+      ],
+      "description": "React Native ScrollView component"
+    },
+    "FlatList Component": {
+      "prefix": "FlatList",
+      "body": [
+        "<FlatList",
+        "  data={${1:data}}",
+        "  renderItem={({ item }) => (${2:<Text>{item}</Text>})}",
+        "  keyExtractor={(item, index) => index.toString()}",
+        "/>"
+      ],
+      "description": "React Native FlatList component"
+    },
+    "SectionList Component": {
+      "prefix": "SectionList",
+      "body": [
+        "<SectionList",
+        "  sections={${1:sections}}",
+        "  renderItem={({ item }) => (${2:<Text>{item}</Text>})}",
+        "  renderSectionHeader={({ section }) => (${3:<Text>{section.title}</Text>})}",
+        "  keyExtractor={(item, index) => index.toString()}",
+        "/>"
+      ],
+      "description": "React Native SectionList component"
+    },
+    "TextInput Component": {
+      "prefix": "TextInput",
+      "body": [
+        "<TextInput",
+        "  style={styles.${1:input}}",
+        "  onChangeText={${2:onChangeText}}",
+        "  value={${3:value}}",
+        "/>"
+      ],
+      "description": "React Native TextInput component"
+    },
+    "Button Component": {
+      "prefix": "Button",
+      "body": [
+        "<Button",
+        "  onPress={${1:onPress}}",
+        "  title=\"${2:Button}\"",
+        "  color=\"${3:#841584}\"",
+        "/>"
+      ],
+      "description": "React Native Button component"
+    },
+    "SafeAreaView Component": {
+      "prefix": "SafeAreaView",
+      "body": [
+        "<SafeAreaView style={styles.${1:container}}>",
+        "  ${2}",
+        "</SafeAreaView>"
+      ],
+      "description": "React Native SafeAreaView component"
+    },
+    "ActivityIndicator Component": {
+      "prefix": "ActivityIndicator",
+      "body": [
+        "<ActivityIndicator",
+        "  size=\"${1:large}\"",
+        "  color=\"${2:#0000ff}\"",
+        "/>"
+      ],
+      "description": "React Native ActivityIndicator component"
+    },
+    "RefreshControl Component": {
+      "prefix": "RefreshControl",
+      "body": [
+        "<RefreshControl",
+        "  refreshing={${1:refreshing}}",
+        "  onRefresh={${2:onRefresh}}",
+        "/>"
+      ],
+      "description": "React Native RefreshControl component"
+    },
+    "KeyboardAvoidingView Component": {
+      "prefix": "KeyboardAvoidingView",
+      "body": [
+        "<KeyboardAvoidingView",
+        "  behavior=\"${1:padding}\"",
+        "  style={styles.${2:container}}",
+        ">",
+        "  ${3:/* content */}",
+        "</KeyboardAvoidingView>"
+      ],
+      "description": "React Native KeyboardAvoidingView component"
+    },
+    "Modal Component": {
+      "prefix": "Modal",
+      "body": [
+        "<Modal",
+        "  animationType=\"${1:slide}\"",
+        "  transparent={${2:true}}",
+        "  visible={${3:modalVisible}}",
+        "  onRequestClose={${4:onRequestClose}}",
+        ">",
+        "  ${5:/* content */}",
+        "</Modal>"
+      ],
+      "description": "React Native Modal component"
+    },
+    "StatusBar Component": {
+      "prefix": "StatusBar",
+      "body": [
+        "<StatusBar",
+        "  barStyle=\"${1:default}\"",
+        "  hidden={${2:false}}",
+        "/>"
+      ],
+      "description": "React Native StatusBar component"
+    },
+    "ImageBackground Component": {
+      "prefix": "ImageBackground",
+      "body": [
+        "<ImageBackground",
+        "  source={require('${1:./path/to/image.png}')}",
+        "  style={styles.${2:background}}",
+        ">",
+        "  ${3:/* content */}",
+        "</ImageBackground>"
+      ],
+      "description": "React Native ImageBackground component"
+    },
+    "Automatically Create a Stylesheet": {
+        "prefix": "styles",
+        "body": [
+            "const styles = StyleSheet.create({",
+            "   container : {",
+            "   },",
+            "});"
+        ]
+    },
+  }
+  

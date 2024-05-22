@@ -1,0 +1,20 @@
+{
+  "name": "react-native-snippets",
+  "displayName": "react-native-snippets",
+  "description": "Helps you develop react-native apps",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
